@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" dir="rtl">
 
-
-<!-- Mirrored from fudademo.ir/foap/pages-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 02:52:20 GMT -->
 <head>
 
     <meta charset="utf-8" />
@@ -12,142 +10,555 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
     <!-- plugin css -->
-    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
     <!-- preloader css -->
-    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
-
+    <link rel="stylesheet" href="assets/css/preloader.min.css" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap-rtl.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-rtl.min.css" id="bootstrap-style" rel="stylesheet" />
     <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" />
 
+    <style type="text/css">
+        @font-face {
+            font-family: "iransans";
+            src: url("style/fonts/IRANSansWeb_Light.html") format("woff2");
+            src: url("style/fonts/IRANSansWeb_Light.woff") format("woff");
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: iransans;
+        }
+
+        /*---------------------------------------------*/
+        a {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666666;
+            margin: 0px;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+        }
+
+        a:focus {
+            outline: none !important;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #57b846;
+        }
+
+        /*---------------------------------------------*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666666;
+            margin: 0px;
+        }
+
+        ul,
+        li {
+            margin: 0px;
+            list-style-type: none;
+        }
+
+
+        /*---------------------------------------------*/
+        input {
+            outline: none;
+            border: none;
+        }
+
+        textarea {
+            outline: none;
+            border: none;
+        }
+
+        textarea:focus,
+        input:focus {
+            border-color: transparent !important;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        input:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+        input:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+        input:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #999999;
+        }
+
+        input:-moz-placeholder {
+            color: #999999;
+        }
+
+        input::-moz-placeholder {
+            color: #999999;
+        }
+
+        input:-ms-input-placeholder {
+            color: #999999;
+        }
+
+        textarea::-webkit-input-placeholder {
+            color: #999999;
+        }
+
+        textarea:-moz-placeholder {
+            color: #999999;
+        }
+
+        textarea::-moz-placeholder {
+            color: #999999;
+        }
+
+        textarea:-ms-input-placeholder {
+            color: #999999;
+        }
+
+        /*---------------------------------------------*/
+        button {
+            outline: none !important;
+            border: none;
+            background: transparent;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        iframe {
+            border: none !important;
+        }
+
+
+        /*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+        .txt1 {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #999999;
+        }
+
+        .txt2 {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #666666;
+        }
+
+
+        /*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+        .limiter {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .container-login100 {
+            width: 100%;
+            min-height: 100vh;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .wrap-login100 {
+            width: 960px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 130px 130px 90px 95px;
+        }
+
+        /*------------------------------------------------------------------
+[  ]*/
+        .login100-pic {
+            width: 416px;
+        }
+
+        .login100-pic img {
+            max-width: 100%;
+        }
+
+
+        /*------------------------------------------------------------------
+[  ]*/
+        .login100-form {
+            width: 290px;
+        }
+
+        .login100-form-title {
+            font-size: 24px;
+            color: #333333;
+            line-height: 1.2;
+            text-align: center;
+
+            width: 100%;
+            display: block;
+            padding-bottom: 54px;
+        }
+
+
+        /*---------------------------------------------*/
+        .wrap-input100 {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            margin-bottom: 10px;
+        }
+
+        .input100 {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666666;
+
+            display: block;
+            width: 100%;
+            background: #e6e6e6;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0 30px 0 68px;
+        }
+
+
+        /*------------------------------------------------------------------
+[ Focus ]*/
+        .focus-input100 {
+            display: block;
+            position: absolute;
+            border-radius: 25px;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 0px 0px;
+            color: rgba(87, 184, 70, 0.8);
+        }
+
+        .input100:focus+.focus-input100 {
+            -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+            animation: anim-shadow 0.5s ease-in-out forwards;
+        }
+
+        @-webkit-keyframes anim-shadow {
+            to {
+                box-shadow: 0px 0px 70px 25px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes anim-shadow {
+            to {
+                box-shadow: 0px 0px 70px 25px;
+                opacity: 0;
+            }
+        }
+
+        .symbol-input100 {
+            font-size: 15px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            border-radius: 25px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-right: 250px;
+            pointer-events: none;
+            color: #666666;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        .input100:focus+.focus-input100+.symbol-input100 {
+            color: #57b846;
+            padding-right: 240px;
+        }
+
+        /*------------------------------------------------------------------
+[ Button ]*/
+        .container-login100-form-btn {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .login100-form-btn {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #fff;
+            text-transform: uppercase;
+
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            background: #57b846;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25px;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        .login100-form-btn:hover {
+            background: #333333;
+        }
+
+
+
+        /*------------------------------------------------------------------
+[ Responsive ]*/
+
+
+
+        @media (max-width: 992px) {
+            .wrap-login100 {
+                padding: 177px 90px 33px 85px;
+            }
+
+            .login100-pic {
+                width: 35%;
+            }
+
+            .login100-form {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wrap-login100 {
+                padding: 100px 80px 33px 80px;
+            }
+
+            .login100-pic {
+                display: none;
+            }
+
+            .login100-form {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .wrap-login100 {
+                padding: 100px 15px 33px 15px;
+            }
+        }
+
+
+        /*------------------------------------------------------------------
+[ Alert validate ]*/
+
+        .validate-input {
+            position: relative;
+        }
+
+        .alert-validate::before {
+            content: attr(data-validate);
+            position: absolute;
+            max-width: 70%;
+            background-color: white;
+            border: 1px solid #c80000;
+            border-radius: 13px;
+            padding: 4px 25px 4px 10px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 8px;
+            pointer-events: none;
+
+            color: #c80000;
+            font-size: 13px;
+            line-height: 1.4;
+            text-align: right;
+
+            visibility: hidden;
+            opacity: 0;
+
+            -webkit-transition: opacity 0.4s;
+            -o-transition: opacity 0.4s;
+            -moz-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+        }
+
+        .alert-validate::after {
+            content: "\f06a";
+            font-family: FontAwesome;
+            display: block;
+            position: absolute;
+            color: #c80000;
+            font-size: 15px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 13px;
+        }
+
+        .alert-validate:hover:before {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media (max-width: 992px) {
+            .alert-validate::before {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
-<style type="text/css">
-@font-face {
-    font-family: "iransans";
-    src: url("style/fonts/IRANSansWeb_Light.html") format("woff2");
-    src: url("style/fonts/IRANSansWeb_Light.woff") format("woff");
-}
 
-*body
-{
-	font-family:iransans;
-	
-}</style>
 <body style="background-image: url(assets/images/bg.jpg)">
 
-    <!-- <body data-layout="horizontal"> -->
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
 
-    <!-- Begin page -->
-    <div id="layout-wrapper">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title">
+                        ورود به سایت
+                    </span>
 
-        <!-- ============================================================== -->
-        <div class="main-content">
-
-            <div class="page-content">
-            <div class="container-fluid">
-
-                <!-- end page title -->
-    <div class="main-wrapper">
-        <div class="page-wrapper full-page">
-            <div class="page-content d-flex align-items-center justify-content-center">
-
-                <div class="row w-100 mx-0 auth-page">
-                    <div class="col-md-12 col-xl-6 mx-auto">
-                        <div class="card">
-                            <div class="row">
-                               
-                                <div class="col-md-12 ps-md-0">
-                                    <div class="auth-form-wrapper px-4 py-5">
-                                        <a href="#" class="noble-ui-logo d-block mb-2">fudatco<span>UI</span></a>
-                                        <h5 class="text-muted fw-normal mb-4">یک حساب کاربری ایجاد کنید</h5>
-                                        <form class="forms-sample">
-                                            <div class="mb-3">
-                                                <label for="exampleInputUsername1" class="form-label">نام کاربری</label>
-                                                <input type="text" class="form-control" id="exampleInputUsername1" autocomplete="Username" placeholder="نام کاربری">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="userEmail" class="form-label">ایمیل</label>
-                                                <input type="email" class="form-control" id="userEmail" placeholder="ایمیل">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="userPassword" class="form-label">پسوورد</label>
-                                                <input type="password" class="form-control" id="userPassword" autocomplete="current-password" placeholder="پسوورد">
-                                            </div>
-                                            <div class="form-check mb-3">
-                                                <input type="checkbox" class="form-check-input" id="authCheck">
-                                                <label class="form-check-label" for="authCheck">
-                          مرا بخاطر بسپار
-                        </label>
-                                            </div>
-                                            <div>
-                                                <a href="dashboard.html" class="btn btn-primary text-white me-2 mb-2 mb-md-0">ورود</a>
-                                                <button type="button" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
-                          <i class="btn-icon-prepend" data-feather="twitter"></i>
-                        لاگین با شبکه های اجتماعی
-                        </button>
-                                            </div>
-                                            <a href="login.html" class="d-block mt-3 text-muted">حساب کاربری دارید؟ورود</a>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="wrap-input100 validate-input">
+                        <input class="input100" type="text" name="email" placeholder="کدملی">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-house-user" aria-hidden="true"></i>
+                        </span>
                     </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <input class="input100" type="password" name="pass" placeholder="رمز عبور">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            ورود
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <span class="txt1">
+                            فراموشی
+                        </span>
+                        <a class="txt2" href="#">
+                            نام کاربری یا رمزعبور
+                        </a>
+                    </div>
+                </form>
+
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="assets/images/animate/plastic-surgery-animate.svg" alt="IMG">
                 </div>
-
             </div>
         </div>
     </div>
 
-
-
-
-                <!-- end row -->
-            </div>
-            <!-- container-fluid -->
-        </div>
-
-
-           
-        </div>
-        <!-- end main content-->
-
-    </div>
-    <!-- END layout-wrapper -->
-
-
-<!-- Right bar overlay-->
-<div class="rightbar-overlay"></div>
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
-    <script src="assets/libs/feather-icons/feather.min.js"></script>
-    <!-- pace js -->
-    <script src="assets/libs/pace-js/pace.min.js"></script>
-
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-
-    <!-- Plugins js-->
-    <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- dashboard init -->
-    <script src="assets/js/pages/dashboard.init.js"></script>
-
-    <script src="assets/js/app.js"></script>
+    <script src="assets/vendors/tilt/tilt.jquery.min.js"></script>
 
 </body>
 
-
-<!-- Mirrored from fudademo.ir/foap/pages-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 02:52:21 GMT -->
 </html>
